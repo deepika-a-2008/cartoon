@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Gallery</title>
+<link rel="icon" href="Shinchan.jpg">
+<style>
+
+body{
+    margin: 50px;;
+    background:rgb(52, 114, 182);
+    font-family:monospace;
+}
+
+/* Gallery Grid */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+/* Images */
+.gallery a img{
+    width:100%;
+    border-radius:12px;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.gallery a img:hover{
+    transform:scale(1.08);
+    box-shadow:0 10px 20px rgba(255,255,255,0.3);
+}
+
+/* Lightbox */
+.lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Show when clicked */
+.lightbox:target{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:80%;
+    border-radius:15px;
+}
+
+/* Close button */
+.close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:white;
+    font-size:30px;
+    text-decoration:none;
+}
+
+</style>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Doreamon-Image Gallery</title>
+<style>
+
+body{
+    margin: 50px;
+    background:rgb(52, 114, 182);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Gallery Grid */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+/* Images */
+.gallery  img{
+    width:100%;
+    border-radius:12px;
+    transition:1s;
+    cursor:cursor;
+}
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: black;
+}
+
+.gallery a img:hover{
+    transform:scale(1.08);
+    box-shadow:linear-gradient(180deg, #ff6600, #ffcc00);;
+}
+
+/* Lightbox */
+.lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Show when clicked */
+.lightbox:target{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:80%;
+    border-radius:15px;
+}
+
+</style>
+</head>
+
+<body>
+<center><h1><a href="shinchan.html"><b>Shinchan</b></a></h1></center>
+<hr>
+<div class="gallery">
+    <a href="#img1"><img src="https://i.pinimg.com/736x/c0/a8/d6/c0a8d6f9078680ee081ac1cfa2819f74.jpg" height="350px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/57/4a/28/574a286b933dd4b2b3e26b0e294ae94e.jpg" height="350px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/d8/60/4d/d8604dfdc7c985122b87f2b88af55a40.jpg" height="350px"></a>
+    <a href="#img4"><img src="https://i.pinimg.com/736x/5e/a7/7e/5ea77ef33a44544eb65fe9f0605470bd.jpg" height="350px"></a>
+    <a href="#img1"><img src="https://i.pinimg.com/736x/bf/c0/bf/bfc0bfd7fe34cc3cd4e8390e4abf7ffd.jpg"height="350px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/1200x/2d/ac/b7/2dacb725a1edfe4d10b439b70f19240b.jpg" height="350px"></a>
+    <a href="#img4"><img src="https://i.pinimg.com/736x/dd/e6/8d/dde68dae0dfb9546c89e5d5c3ae93b4e.jpg" height="300px"></a>
+    <a href="#img1"><img src="https://i.pinimg.com/736x/82/5d/3f/825d3fab0075873c0d38fe6b32e60c3b.jpg" height="300px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/736x/9a/6c/ad/9a6cad4a7d66433ff72a529f07417c85.jpg" height="300"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/0b/c7/7b/0bc77b29033d6df66a135b9019700ee5.jpg" height="300px"></a>
+    <a href="#img4"><img src="https://i.pinimg.com/736x/a7/2e/63/a72e63ef48e71d09602adc2598d9b1f5.jpg" height="300px"></a>
+    <a href="#img1"><img src="https://i.pinimg.com/736x/d9/b0/3b/d9b03b7549a24f0994b0d0bd5882de3a.jpg" height="300px"></a>
+</div>
+
+<div class="lightbox" id="img1">
+    <a href="#" class="close"></a>
+    <img src="img1.jpg">
+</div>
+
+<div class="lightbox" id="img2">
+    <a href="#" class="close"></a>
+    <img src="img2.jpg">
+</div>
+
+<div class="lightbox" id="img3">
+    <a href="#" class="close"></a>
+    <img src="img3.jpg">
+</div>
+
+<div class="lightbox" id="img4">
+    <a href="#" class="close"></a>
+    <img src="img4.jpg">
+</div>
+<center>
+  <div>
+      <a href="https://www.linkedin.com/in/deepika-a-219b9b373/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bp53mvMAbQ2Cl1giaHiJl2g%3D%3D">LinkedIn</a>
+      <a href="https://www.instagram.com/different_deepika_?igsh=MXRwcWFzNmxqdzIwMQ==">|Instagram</a>
+  </div>
+</center>
+</body>
+</html>

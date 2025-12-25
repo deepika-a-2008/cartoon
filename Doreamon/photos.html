@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Doreamon-Image Gallery</title>
+<style>
+
+body{
+    margin: 50px;
+    background:rgb(52, 114, 182);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Gallery Grid */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+/* Images */
+.gallery  img{
+    width:100%;
+    border-radius:12px;
+    transition:1s;
+    cursor:cursor;
+}
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: black;
+}
+
+.gallery a img:hover{
+    transform:scale(1.08);
+    box-shadow:linear-gradient(180deg, #ff6600, #ffcc00);;
+}
+
+/* Lightbox */
+.lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Show when clicked */
+.lightbox:target{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:80%;
+    border-radius:15px;
+}
+
+</style>
+</head>
+
+<body>
+<center><h1><a href="doreamon.html"><b>Doreamon</b></a></h1></center>
+<hr>
+<div class="gallery">
+    <a href="#img1"><img src="https://i.pinimg.com/736x/a5/dc/c1/a5dcc1d2a1bb7ad48242206c048dfb5d.jpg" height="350px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/736x/72/73/16/7273162f382a7d9746a49bc6048e2f1e.jpg" height="350px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/1200x/0e/07/eb/0e07eb7bda92642de56baee3c0354ccc.jpg" height="300px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/ea/28/54/ea2854b7736755024a287935fcf86564.jpg" height="350px"></a>
+    <a href="#img4"><img src="https://i.pinimg.com/736x/fe/85/e4/fe85e464f86703a6f39fb5b8e7978ccc.jpg" height="350px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/736x/64/b3/ed/64b3ed56da19e80192c990d5cbab4df3.jpg" height="300px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/1200x/15/41/29/154129e731ae27747a409524dd22fc9b.jpg" height="300px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/1200x/4a/e7/55/4ae755644c3ba6253afb21ab2361d751.jpg" height="300px"></a>
+    <a href="#img4"><img src="https://i.pinimg.com/736x/2b/48/30/2b4830b7cfffc8be10a65891c6cb2691.jpg" height="300px"></a>
+    <a href="#img1"><img src="https://i.pinimg.com/1200x/57/5a/b0/575ab0c99f8c7862a76ff86c7c4c2ccd.jpg" height="300px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/736x/33/2c/e5/332ce502afd8e607b9f348a24e19b9d4.jpg" height="300"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/f7/cc/98/f7cc989a62a598644c2c7f77d12b3476.jpg" height="300px"></a>
+    <a href="#img4"><img src="https://i.pinimg.com/736x/47/e0/a1/47e0a15438807c9ff1a9c6203cb69cae.jpg" height="300px"></a>
+    <a href="#img1"><img src="https://i.pinimg.com/736x/52/51/10/52511070e3cad7bc3de599cbac833cff.jpg" height="300px"></a>
+</div>
+
+<div class="lightbox" id="img1">
+    <a href="#" class="close"></a>
+    <img src="img1.jpg">
+</div>
+
+<div class="lightbox" id="img2">
+    <a href="#" class="close"></a>
+    <img src="img2.jpg">
+</div>
+
+<div class="lightbox" id="img3">
+    <a href="#" class="close"></a>
+    <img src="img3.jpg">
+</div>
+
+<div class="lightbox" id="img4">
+    <a href="#" class="close"></a>
+    <img src="img4.jpg">
+</div>
+<center>
+  <div>
+      <a href="https://www.linkedin.com/in/deepika-a-219b9b373/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bp53mvMAbQ2Cl1giaHiJl2g%3D%3D">LinkedIn</a>
+      <a href="https://www.instagram.com/different_deepika_?igsh=MXRwcWFzNmxqdzIwMQ==">|Instagram</a>
+  </div>
+</center>
+</body>
+</html>

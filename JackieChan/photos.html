@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JackieChan-Image Gallery</title>
+<link rel="icon" href="JackieChan.jpg">
+<style>
+
+body{
+    margin: 50px;
+    background:rgb(52, 114, 182);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Gallery Grid */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+/* Images */
+.gallery  img{
+    width:100%;
+    border-radius:12px;
+    transition:1s;
+    cursor:cursor;
+}
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: black;
+}
+
+.gallery a img:hover{
+    transform:scale(1.08);
+    box-shadow:linear-gradient(180deg, #ff6600, #ffcc00);;
+}
+
+/* Lightbox */
+.lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Show when clicked */
+.lightbox:target{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:80%;
+    border-radius:15px;
+}
+
+</style>
+</head>
+
+<body>
+<center><h1><a href="JackieChan.html"><b>JackieChan</b></a></h1></center>
+<hr>
+<div class="gallery">
+    <a href="#img1"><img src="https://i.pinimg.com/1200x/76/bd/9d/76bd9df49bbd6c02565bbbd84fe56867.jpg" height="350px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/1200x/48/f7/1e/48f71e7ab9c3d76eaab98785988998ac.jpg" height="350px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/86/5b/4d/865b4d236ce7b5d6fc6f93826fde1944.jpg" height="300px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/1200x/04/b1/2a/04b12adc0e908f1eff530169a691267b.jpg" height="350px"></a>
+    <a href="#img4"><img src="https://i.pinimg.com/736x/8f/38/c2/8f38c2b8a3bad73737062e0014ca6491.jpg" height="350px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/736x/b0/89/4f/b0894fc8c939fe202dae78a3f4721672.jpg" height="300px"></a>
+    <a href="#img2"><img src="https://m.media-amazon.com/images/I/510qNbHvB0L._AC_UF1000,1000_QL80_.jpg" height="300px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/81/5f/15/815f15fcc186184126c8aa8ae2d2a47e.jpg" height="300px"></a>
+    <a href="#img4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ud7cKqz6h91IBPxrF_b1fab3aUAJVe-Q7A&s" height="300px"></a>
+    <a href="#img1"><img src="https://static.tvtropes.org/pmwiki/pub/images/1000009862.png" height="300px"></a>
+    <a href="#img2"><img src="https://content.instructables.com/F2J/IL8L/IBUSY3Z6/F2JIL8LIBUSY3Z6.jpg?auto=webp&crop=1.2%3A1&frame=1&width=270" height="300"></a>
+    <a href="#img3"><img src="https://m.media-amazon.com/images/M/MV5BMTc5OTQ3OTE1Nl5BMl5BanBnXkFtZTgwMDA4NzUyMjE@._V1_.jpg" height="300px"></a>
+</div>
+
+<div class="lightbox" id="img1">
+    <a href="#" class="close"></a>
+    <img src="img1.jpg">
+</div>
+
+<div class="lightbox" id="img2">
+    <a href="#" class="close"></a>
+    <img src="img2.jpg">
+</div>
+
+<div class="lightbox" id="img3">
+    <a href="#" class="close"></a>
+    <img src="img3.jpg">
+</div>
+
+<div class="lightbox" id="img4">
+    <a href="#" class="close"></a>
+    <img src="img4.jpg">
+</div>
+<center>
+  <div>
+      <a href="https://www.linkedin.com/in/deepika-a-219b9b373/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bp53mvMAbQ2Cl1giaHiJl2g%3D%3D">LinkedIn</a>
+      <a href="https://www.instagram.com/different_deepika_?igsh=MXRwcWFzNmxqdzIwMQ==">|Instagram</a>
+  </div>
+</center>
+</body>
+</html>

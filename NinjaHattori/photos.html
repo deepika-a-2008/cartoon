@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ninja Hattori-Image Gallery</title>
+<link rel="icon" href="NinjaHattori.jpg">
+<style>
+
+body{
+    margin: 50px;
+    background:rgb(52, 114, 182);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Gallery Grid */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+/* Images */
+.gallery  img{
+    width:100%;
+    border-radius:12px;
+    transition:1s;
+    cursor:cursor;
+}
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: black;
+}
+
+.gallery a img:hover{
+    transform:scale(1.08);
+    box-shadow:linear-gradient(180deg, #ff6600, #ffcc00);;
+}
+
+/* Lightbox */
+.lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Show when clicked */
+.lightbox:target{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:80%;
+    border-radius:15px;
+}
+
+</style>
+</head>
+
+<body>
+<center><h1><a href="NinjaHattori.html"><b>NinjaHattori</b></a></h1></center>
+<hr>
+<div class="gallery">
+    <a href="#img1"><img src="https://i.pinimg.com/736x/7d/5c/0f/7d5c0fd3bb0ccc04c3fa3be53cdeb346.jpg" height="350px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/736x/02/f4/9c/02f49c4e12cd96df70a504b4b86881fc.jpg" height="350px"></a>
+    <a href="#img3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaLFAEZ77maeh4aPJHlfct0h-ICBiNBINOaA&s" height="350px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/58/62/a6/5862a6c5b66746699e77f843dc2f13f4.jpg" height="350px"></a>
+    <a href="#img4"><img src="https://i.pinimg.com/736x/85/42/40/854240b20c61743c38d4adbd954ee876.jpg" height="350px"></a>
+    <a href="#img2"><img src="https://i.redd.it/ninja-hattori-kun-characters-in-doraemon-v0-wzw7otgntb0e1.png?width=303&format=png&auto=webp&s=99bf30d5cc7205c5bea62c3dfd16d0eff361e6e2" height="300px"></a>
+    <a href="#img2"><img src="https://png.pngtree.com/png-vector/20230211/ourmid/pngtree-ninja-kunai-png-image_6594311.png" height="300px"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/36/c2/66/36c266d47148780b50b783ac2dae8ee2.jpg" height="300px"></a>    <a href="#img4"><img src="https://i.namu.wiki/i/rp44wN3Qg3mgLz4gDv0D0yZc9aoZKaC3CLryh2ZzTcRO-sgfJ42IbQrb-AKzYeSqoFn5kfajX5Q1ybE-UsCgbw.webp" height="300px"></a>
+    <a href="#img1"><img src="https://i.pinimg.com/736x/67/84/f8/6784f8b8b7490561fadaa0fcb0786a3d.jpg" height="300px"></a>
+    <a href="#img2"><img src="https://i.pinimg.com/736x/79/f5/bb/79f5bb3b50c516598a2d1da3bd1d1a2a.jpg" height="300"></a>
+    <a href="#img3"><img src="https://i.pinimg.com/736x/80/f9/62/80f96219329acd57b56a75db7338b6fb.jpg" height="300px"></a>
+</div>
+
+<div class="lightbox" id="img1">
+    <a href="#" class="close"></a>
+    <img src="img1.jpg">
+</div>
+
+<div class="lightbox" id="img2">
+    <a href="#" class="close"></a>
+    <img src="img2.jpg">
+</div>
+
+<div class="lightbox" id="img3">
+    <a href="#" class="close"></a>
+    <img src="img3.jpg">
+</div>
+
+<div class="lightbox" id="img4">
+    <a href="#" class="close"></a>
+    <img src="img4.jpg">
+</div>
+<center>
+  <div>
+      <a href="https://www.linkedin.com/in/deepika-a-219b9b373/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bp53mvMAbQ2Cl1giaHiJl2g%3D%3D">LinkedIn</a>
+      <a href="https://www.instagram.com/different_deepika_?igsh=MXRwcWFzNmxqdzIwMQ==">|Instagram</a>
+  </div>
+</center>
+</body>
+</html>
